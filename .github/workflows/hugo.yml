@@ -11,14 +11,18 @@ permissions:
   id-token: write
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -26,8 +30,10 @@ jobs:
           hugo-version: "0.168.0"
           extended: true
 
+
       - name: Build
-            run: hugo
+        run: hugo
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -35,7 +41,9 @@ jobs:
           path: ./public
 
 
+
   deploy:
+
     needs: build
 
     environment:
@@ -44,5 +52,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Deploy
         uses: actions/deploy-pages@v4
