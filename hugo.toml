@@ -12,7 +12,7 @@ tag = "tags"
 [params]
 defaultTheme = "light"
 disableThemeToggle = true
-telegram = "https://t.me/youyoufan"
+telegram = "https://t.me/gudaobei_news"
 
 ShowReadingTime = true
 ShowBreadCrumbs = true

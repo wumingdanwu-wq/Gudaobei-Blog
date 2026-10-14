@@ -50,14 +50,17 @@ ShowToc: false
 <h2 id="about-contact"><i class="fa-regular fa-envelope" aria-hidden="true"></i>联系我</h2>
 <p>欢迎交流技术、AI 工具、网站搭建与项目实践。</p>
 <a class="about-contact-link" href="https://github.com/wumingdanwu-wq" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub <span class="about-handle">@wumingdanwu-wq</span></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-<p class="about-note"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram 交流群建设中，计划用于技术交流、工具分享、建站经验与项目讨论。已开放的电报频道可从左侧导航访问。</p>
+<p class="about-note"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram 技术交流群，计划用于技术交流、工具分享、建站经验与项目讨论。已开放的电报频道可从左侧导航访问。</p>
 </section>
 
 <section aria-labelledby="about-social">
 <h2 id="about-social"><i class="fa-solid fa-link" aria-hidden="true"></i>社交平台</h2>
 <div class="about-social-links">
 <a href="https://github.com/wumingdanwu-wq" target="_blank" rel="noopener noreferrer" aria-label="访问古道北的 GitHub（新窗口）"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-<span class="about-social-pending"><i class="fa-brands fa-telegram" aria-hidden="true"></i><span>Telegram</span><small>待开放</small></span>
+<a href="https://t.me/gudaobei_chat" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-telegram" aria-hidden="true"></i>
+<span>Telegram</span>
+</a>
 <span class="about-social-pending"><i class="fa-brands fa-youtube" aria-hidden="true"></i><span>YouTube</span><small>待开放</small></span>
 <span class="about-social-pending"><i class="fa-brands fa-tiktok" aria-hidden="true"></i><span>TikTok</span><small>待开放</small></span>
 <span class="about-social-pending"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span><small>待开放</small></span>
