@@ -1,9 +1,17 @@
 <aside class="lab-sidebar" aria-label="个人介绍与导航">
-<div class="lab-logo-wrap"><div class="lab-logo-box"><img src="{{ "logo.png" | relURL }}" alt="Zidane 的头像" width="112" height="112"></div>
+<div class="lab-logo-wrap"><div class="lab-logo-box"><img src="{{ "logo.png" | relURL }}" alt="古道北的头像" width="112" height="112"></div>
 <div class="lab-name-en">Zidane</div><div class="lab-name-cn">古道北</div><p class="lab-desc">记录网络折腾、技术学习、AI探索、工具收藏与个人成长。</p>
-<div class="lab-one-button"><a href="{{ site.Params.telegram }}" target="_blank" rel="noopener noreferrer"><img class="lab-telegram-icon" src="{{ "images/telegram.svg" | relURL }}" alt="" width="22" height="22">电报频道</a></div></div>
+<div class="lab-one-button"><a href="{{ site.Params.telegram }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i>电报频道</a></div></div>
 <nav class="lab-side-section lab-side-links" aria-label="侧栏导航">
-<a class="lab-side-link" href="{{ site.Home.RelPermalink }}"><span>🏠 首页</span></a>
-<details open><summary class="lab-cat-item"><span>🗂 分类</span><span class="lab-badge">{{ len site.Taxonomies.categories }}</span></summary>
-<div class="lab-side-links lab-categories">{{ range site.Taxonomies.categories.Alphabetical }}<a class="lab-cat-item" href="{{ .Page.RelPermalink }}"><span>{{ $icons := dict "网络折腾" "🌐" "技术折腾" "💻" "AI探索" "🤖" "工具合集" "🛠" "教程笔记" "📚" }}{{ index $icons .Page.Title | default "📝" }} {{ .Page.Title }}</span><span class="lab-badge">{{ .Count }}</span></a>{{ end }}</div></details>
-<a class="lab-side-link" href="{{ "archives/" | relURL }}">🕘 归档</a><a class="lab-side-link" href="{{ "tools/" | relURL }}">🛠 工具</a><a class="lab-side-link" href="{{ "tags/" | relURL }}">🏷 标签</a><a class="lab-side-link" href="{{ "about/" | relURL }}">👤 关于</a></nav></aside>
+<a class="lab-side-link" href="{{ site.Home.RelPermalink }}"{{ if .IsHome }} aria-current="page"{{ end }}><span class="lab-nav-label"><i class="fa-solid fa-house" aria-hidden="true"></i>首页</span></a>
+<details open><summary class="lab-cat-item"><span class="lab-nav-label"><i class="fa-regular fa-folder-open" aria-hidden="true"></i>分类</span><span class="lab-badge">{{ len site.Taxonomies.categories }}</span></summary>
+<div class="lab-side-links lab-categories">
+{{ range site.Taxonomies.categories.Alphabetical }}
+{{ $icons := dict "网络折腾" "fa-globe" "技术折腾" "fa-laptop-code" "AI探索" "fa-microchip" "工具合集" "fa-sliders" "教程笔记" "fa-book-open" }}
+<a class="lab-cat-item" href="{{ .Page.RelPermalink }}"><span class="lab-nav-label"><i class="fa-solid {{ index $icons .Page.Title | default "fa-file-lines" }}" aria-hidden="true"></i>{{ .Page.Title }}</span><span class="lab-badge">{{ .Count }}</span></a>
+{{ end }}</div></details>
+{{ $current := .RelPermalink }}
+{{ range slice (dict "path" "archives/" "label" "归档" "icon" "fa-regular fa-clock") (dict "path" "tools/" "label" "工具" "icon" "fa-solid fa-sliders") (dict "path" "tags/" "label" "标签" "icon" "fa-solid fa-tag") (dict "path" "about/" "label" "关于" "icon" "fa-regular fa-user") }}
+<a class="lab-side-link" href="{{ .path | relURL }}"{{ if eq $current (.path | relURL) }} aria-current="page"{{ end }}><span class="lab-nav-label"><i class="{{ .icon }}" aria-hidden="true"></i>{{ .label }}</span></a>
+{{ end }}
+</nav></aside>

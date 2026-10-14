@@ -1,0 +1,12 @@
+{{- $external := .Get "href" -}}
+{{- $url := $external -}}
+{{- with .Get "ref" -}}{{- $url = $.Page.RelRef (dict "path" .) -}}{{- end -}}
+<a class="tool-card" href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+  <span class="tool-card-icon"><i class="{{ .Get "icon" }}" aria-hidden="true"></i></span>
+  <span class="tool-card-body">
+    <span class="tool-card-name">{{ .Get "name" }}</span>
+    <span class="tool-card-description">{{ .Get "description" }}</span>
+    <span class="tool-card-meta">{{ if $external }}{{ .Get "domain" }}<span class="tool-card-status">外部网站<span class="tool-sr-only">，新窗口打开</span></span>{{ else }}站内栏目{{ if .Get "pending" }}<span class="tool-card-status">待补充</span>{{ end }}{{ end }}</span>
+  </span>
+  <i class="tool-card-arrow fa-solid {{ if $external }}fa-arrow-up-right-from-square{{ else }}fa-arrow-right{{ end }}" aria-hidden="true"></i>
+</a>
