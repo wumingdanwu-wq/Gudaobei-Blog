@@ -1,0 +1,2 @@
+<article class="lab-post-card"><div class="lab-post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>{{ range .GetTerms "categories" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>
+<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ .Description | default (.Summary | plainify | truncate 160) }}</p><div class="lab-card-tags">{{ range .GetTerms "tags" }}<a class="lab-tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div></article>

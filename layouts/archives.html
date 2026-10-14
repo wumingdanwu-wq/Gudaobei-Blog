@@ -1,0 +1,7 @@
+{{ define "main" }}
+<section class="lab-hero"><h1>文章归档</h1><p>把学习、实践与成长按时间整理下来。</p></section>
+<section class="lab-archive" aria-label="文章时间轴"><div class="lab-timeline">
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ range $posts.GroupByDate "2006年01月" "desc" }}<section class="lab-month"><h2 class="lab-month-pill">{{ .Key }}</h2>
+{{ range .Pages }}<div class="lab-entry"><time class="lab-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02日" }}</time><div class="lab-card"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | default (.Summary | plainify | truncate 160) }}</p><div class="lab-card-tags">{{ range .GetTerms "tags" }}<a class="lab-tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div></div></div>{{ end }}</section>{{ else }}<p>还没有文章。</p>{{ end }}
+</div></section>{{ end }}

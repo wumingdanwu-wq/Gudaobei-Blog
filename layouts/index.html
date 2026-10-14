@@ -1,0 +1,7 @@
+{{ define "main" }}
+<section class="lab-hero"><h1>最新文章</h1><p>记录网络折腾、技术学习、AI探索、工具收藏与个人成长。</p></section>
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $pager := .Paginate $posts.ByDate.Reverse }}
+<div class="lab-posts">{{ range $pager.Pages }}{{ partial "lab-card.html" . }}{{ else }}<p>新的记录正在路上。</p>{{ end }}</div>
+{{ if gt $pager.TotalPages 1 }}<nav class="lab-pagination" aria-label="分页">{{ with $pager.Prev }}<a href="{{ .URL }}">← 上一页</a>{{ end }}<span>{{ $pager.PageNumber }} / {{ $pager.TotalPages }}</span>{{ with $pager.Next }}<a href="{{ .URL }}">下一页 →</a>{{ end }}</nav>{{ end }}
+{{ end }}
