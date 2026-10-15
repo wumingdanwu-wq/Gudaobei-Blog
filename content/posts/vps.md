@@ -1,6 +1,6 @@
 ---
 title: "我的VPS网络搭建记录"
-date: 2026-10-13
+date: 2025-10-13
 description: "记录VPS服务器搭建、Linux学习和网络环境配置过程。"
 categories:
   - 技术折腾

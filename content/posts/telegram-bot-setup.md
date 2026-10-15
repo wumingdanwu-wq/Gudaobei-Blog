@@ -1,6 +1,6 @@
 ---
 title: "给博客配一个数字管家：我用 Python 折腾了一个 Telegram 机器人"
-date: 2026-10-15
+date: 2026-10-14
 description: "记录古道北助手（GudaoBeiBot）从零开发、入群欢迎排坑到 Hugo 博客自动同步频道的折腾全过程。"
 
 categories:
