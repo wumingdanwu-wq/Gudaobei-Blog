@@ -9,17 +9,18 @@ hideMeta: true
 
 ## 文档目录
 
-以下九篇已建立框架，正文将逐步补充。
+以下十篇已建立框架，正文将逐步补充。
 
 1. [外区 Apple ID 注册]({{< relref "/docs/01-外区苹果ID注册.md" >}}) — 待编写
 2. [Google 邮箱注册]({{< relref "/docs/02-谷歌邮箱注册.md" >}}) — 待编写
-3. [VPS 自建节点]({{< relref "/docs/03-VPS自建节点.md" >}}) — <span style="color:#e64340">已编写</span>
+3. [VPS 自建节点]({{< relref "/docs/03-VPS自建节点.md" >}}) — 【已编写】
 4. [域名基础知识]({{< relref "/docs/04-域名基础知识.md" >}}) — 待编写
 5. [域名邮箱与 Cloudflare 托管]({{< relref "/docs/05-域名邮箱与CF托管.md" >}}) — 待编写
 6. [GitHub 使用指南]({{< relref "/docs/06-GitHub使用指南.md" >}}) — 待编写
-7. [虚拟机连接 V2rayA]({{< relref "/docs/07-V2rayA虚拟机配置.md" >}}) — 待编写
+7. [虚拟机连接 V2rayA]({{< relref "/docs/07-V2rayA虚拟机配置.md" >}}) — 【已编写】
 8. [CDN 优选 IP 搭建与配置]({{< relref "/docs/08-CDN优选IP配置.md" >}}) — 待编写
-9. [Hugo 博客搭建与 Git 发布]({{< relref "/docs/09-Hugo博客搭建发布.md" >}}) — <span style="color:#e64340">已编写</span>
+9. [Hugo 博客搭建与 Git 发布]({{< relref "/docs/09-Hugo博客搭建发布.md" >}}) —【已编写】
+10. [虚拟资产学习账本]({{< relref "/docs/10-虚拟资产学习账本.md" >}}) —【已编写】
 
 ## 如何继续补充
 
