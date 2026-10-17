@@ -13,7 +13,7 @@ hideMeta: true
 
 1. [外区 Apple ID 注册]({{< relref "/docs/01-外区苹果ID注册.md" >}}) — 【已编写】
 2. [Google 邮箱注册]({{< relref "/docs/02-谷歌邮箱注册.md" >}}) — 【已编写】
-3. [VPS 自建节点]({{< relref "/docs/03-VPS自建节点.md" >}}) — 【已编写】
+3. [VPS 服务器搭建]({{< relref "/docs/03-VPS服务器搭建.md" >}}) — 【已编写】
 4. [域名基础知识]({{< relref "/docs/04-域名基础知识.md" >}}) — 待编写
 5. [域名邮箱与 Cloudflare 托管]({{< relref "/docs/05-域名邮箱与CF托管.md" >}}) — 待编写
 6. [GitHub 使用指南]({{< relref "/docs/06-GitHub使用指南.md" >}}) — 待编写
