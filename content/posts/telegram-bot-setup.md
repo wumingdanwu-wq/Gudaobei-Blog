@@ -87,8 +87,6 @@ draft: false
 
 在终端敲下运行命令，屏幕打印出：
 
-Plaintext
-
 ```
 古道北助手启动成功
 ```
@@ -120,8 +118,6 @@ Plaintext
 2. **默认屏蔽问题**：启动轮询时如果只写 `app.run_polling()`，Telegram 默认不会推送群成员变动事件。
 
 必须改成下面这样，显式开启全部事件监听：
-
-Python
 
 ```
 app.run_polling(allowed_updates=Update.ALL_TYPES)
@@ -166,8 +162,6 @@ app.run_polling(allowed_updates=Update.ALL_TYPES)
 因为 Hugo 每次生成网站时，都会自动更新 `index.xml`。
 
 现在的自动化流程变成了这样：
-
-Plaintext
 
 ```
 本地写好 Markdown 文章

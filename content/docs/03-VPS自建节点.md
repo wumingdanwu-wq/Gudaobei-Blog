@@ -1,14 +1,14 @@
 ---
-description: 记录 VPS 购买、远程连接、环境配置和节点搭建流程。
+description: 记录 VPS 购买、远程连接、环境配置和服务搭建流程。
 draft: false
 hideMeta: true
 ShowToc: true
 slug: vps
-title: VPS 自建节点
+title: VPS 服务器搭建
 weight: 3
 ---
 
-# VPS 自建节点
+# VPS 服务器搭建
 
 [返回技术文档目录](/docs/)
 
@@ -90,7 +90,7 @@ VERSION=1.3.10 && bash <(curl -Ls https://raw.githubusercontent.com/bulianglin/d
 
 1. 登录后台
 2. 创建连接配置
-3. 保存节点参数
+3. 保存线路参数
 4. 导出客户端配置
 
 客户端导入后检查：
@@ -133,7 +133,7 @@ ssh-keygen -R 你的VPS IP地址
 - IP 是否正确
 - 密码是否正确
 
-### 节点无法使用
+### 服务无法使用
 
 检查：
 
@@ -151,7 +151,7 @@ ssh-keygen -R 你的VPS IP地址
 
 内容：
 
-完成 VPS 自建节点流程整理。
+完成 VPS 服务器搭建流程整理。
 
 后续补充：
 
