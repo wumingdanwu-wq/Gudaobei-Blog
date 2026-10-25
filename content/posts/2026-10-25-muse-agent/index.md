@@ -3,7 +3,7 @@ title: "实测 Meta Muse Agent：免费又快的视频生成，还能让 GPT 当
 date: 2026-10-24
 description: "我亲自测了 Meta Muse Agent 的文生视频、图生视频，还尝试让 GPT 通过 Computer Use 驱动 Muse，自动拍出一部完整短片。"
 categories:
-  - AI 工具
+  - AI探索
 tags:
   - Meta Muse Agent
   - AI 视频
@@ -86,4 +86,6 @@ GPT 交出的第一版成片约 80 秒，故事是完整的，但问题也很明
 
 ---
 
-*参考：灵姐说AI | Ling Talk AI 的视频 [Meta Muse Agent 实测](https://www.youtube.com/watch?v=GKKy4lBNVo4)。*
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117499819526060&bvid=BV19WHV6SEJu&cid=43035593177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="480"></iframe>
+
+*参考：灵姐说AI | Ling Talk AI 的视频 [Meta Muse Agent 实测](https://www.bilibili.com/video/BV19WHV6SEJu/)。*
