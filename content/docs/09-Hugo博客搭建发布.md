@@ -33,15 +33,15 @@ git push
 
 ## 一、环境与路径
 
-| 项目 | 内容 |
-| --- | --- |
-| 系统 | Windows |
-| 博客目录 | `D:\Gudaobei-Blog` |
-| Hugo 程序 | `D:\Hugo\hugo.exe`（未加入 PATH，必须写完整路径） |
-| 需要的软件 | Hugo Extended、Git、GitHub 账号 |
-| 文章位置 | `content/posts/` |
-| 技术文档位置 | `content/docs/` |
-| 自动部署配置 | `.github/workflows/hugo.yml` |
+| 项目         | 内容                                              |
+| ------------ | ------------------------------------------------- |
+| 系统         | Windows                                           |
+| 博客目录     | `D:\Gudaobei-Blog`                                |
+| Hugo 程序    | `D:\Hugo\hugo.exe`（未加入 PATH，必须写完整路径） |
+| 需要的软件   | Hugo Extended、Git、GitHub 账号                   |
+| 文章位置     | `content/posts/`                                  |
+| 技术文档位置 | `content/docs/`                                   |
+| 自动部署配置 | `.github/workflows/hugo.yml`                      |
 
 ------------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ cd D:\Gudaobei-Blog
 **2. 新建文章**
 
 ```powershell
-D:\Hugo\hugo.exe new posts/文章名字.md
+hugo new posts/文章名字/index.md
 ```
 
 文件生成在 `content/posts/`。
@@ -206,18 +206,18 @@ git push
 
 ## 八、常见问题速查
 
-| 现象 | 原因与处理 |
-| --- | --- |
-| `hugo : 无法将“hugo”项识别为 cmdlet` | Hugo 没加入 PATH，改用完整路径 `D:\Hugo\hugo.exe` |
-| Git 提示身份未知（Please tell me who you are） | 设置用户名和邮箱，见下方命令 |
-| `rejected` / `non-fast-forward` | 远程比本地新：`git pull --rebase origin main`，再 `git push` |
-| `nothing to commit` | 没有改动，不用提交 |
-| 推送时要求登录 | GitHub 不支持密码登录，用 Personal Access Token 或 Git Credential Manager（会弹出浏览器授权） |
-| Hugo 构建失败 | 检查 Markdown 格式、Front Matter 两条 `---` 是否成对、YAML 缩进和冒号后空格 |
-| `REF_NOT_FOUND` | `relref` 链接指向的文件不存在，检查文件名，见第七节 |
-| GitHub Actions 失败 | 到仓库 Actions 页面看失败日志；检查 `.github/workflows/hugo.yml`；确认 Settings → Pages 的 Source 选的是 GitHub Actions |
-| `LF will be replaced by CRLF` | 只是换行符提示，不影响，可忽略 |
-| `WARN deprecated: .Language.LanguageCode` | 主题用了即将淘汰的写法，只是警告，暂时可忽略 |
+| 现象                                           | 原因与处理                                                                                                              |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `hugo : 无法将“hugo”项识别为 cmdlet`           | Hugo 没加入 PATH，改用完整路径 `D:\Hugo\hugo.exe`                                                                       |
+| Git 提示身份未知（Please tell me who you are） | 设置用户名和邮箱，见下方命令                                                                                            |
+| `rejected` / `non-fast-forward`                | 远程比本地新：`git pull --rebase origin main`，再 `git push`                                                            |
+| `nothing to commit`                            | 没有改动，不用提交                                                                                                      |
+| 推送时要求登录                                 | GitHub 不支持密码登录，用 Personal Access Token 或 Git Credential Manager（会弹出浏览器授权）                           |
+| Hugo 构建失败                                  | 检查 Markdown 格式、Front Matter 两条 `---` 是否成对、YAML 缩进和冒号后空格                                             |
+| `REF_NOT_FOUND`                                | `relref` 链接指向的文件不存在，检查文件名，见第七节                                                                     |
+| GitHub Actions 失败                            | 到仓库 Actions 页面看失败日志；检查 `.github/workflows/hugo.yml`；确认 Settings → Pages 的 Source 选的是 GitHub Actions |
+| `LF will be replaced by CRLF`                  | 只是换行符提示，不影响，可忽略                                                                                          |
+| `WARN deprecated: .Language.LanguageCode`      | 主题用了即将淘汰的写法，只是警告，暂时可忽略                                                                            |
 
 **设置 Git 身份：**
 
