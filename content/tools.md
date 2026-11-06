@@ -22,6 +22,9 @@ ShowToc: false
 {{< tool-card name="Ping.pe" icon="fa-solid fa-signal" description="网络连通性检测" href="https://ping.pe/" domain="ping.pe" >}}
 {{< tool-card name="BrowserScan" icon="fa-solid fa-fingerprint" description="浏览器指纹检测" href="https://www.browserscan.net/" domain="browserscan.net" >}}
 {{< tool-card name="美国地址生成器" icon="fa-regular fa-address-card" description="美国地址信息生成" href="https://www.meiguodizhi.com/" domain="meiguodizhi.com" >}}
+{{< tool-card name="ping0" icon="fa-solid fa-magnifying-glass-location" description="查询当前网络 IP 地址类型" href="https://ping0.cc/" domain="ping0.cc" >}}
+{{< tool-card name="Scamalytics" icon="fa-solid fa-shield-halved" description="IP 欺诈值查询（值越低代表 IP 越干净）" href="https://scamalytics.com/" domain="scamalytics.com" >}}
+{{< tool-card name="Speedtest" icon="fa-solid fa-gauge-high" description="网络测速" href="https://www.speedtest.net/zh-Hans" domain="speedtest.net" >}}
 </div>
 </section>
 <section aria-labelledby="ai-tools">
